@@ -12,3 +12,7 @@ print(l2[5])
 
 #print the index using given number
 print(l2.index(23))
+
+#index and value both print using enumarate
+print(list(enumerate(l2)))
+
