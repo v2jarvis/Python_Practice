@@ -5,4 +5,4 @@ c=int(input("Enter The Angle:"))
 if((a+b+c)==180):
     print("Triangle")
 else:
-    print("Not Triangle")
+    print("Not A Triangle")
