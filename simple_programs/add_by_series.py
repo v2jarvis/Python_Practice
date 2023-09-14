@@ -6,3 +6,4 @@ for i in range(1,num):
     num=(num*10)+num
 print(num)
 
+
