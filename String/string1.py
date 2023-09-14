@@ -5,15 +5,3 @@ def yug(x):
 a=5
 print(yug(a))
 print(a)
-hjhj
-ghjhj
-hjhgj
-dfhgg
-sdfdsg
-dgfdg
-gjhjhj
-fhgfj
-jhkjkjk
-fhfgh
-fhgh
-fhfh
