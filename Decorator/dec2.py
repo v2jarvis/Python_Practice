@@ -6,7 +6,7 @@ def smart_div(arg):
         return arg(a,b)
     return inner
 
-
+#cal deco
 @smart_div
 def div(a,b):
     val=a/b

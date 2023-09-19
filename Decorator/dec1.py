@@ -6,7 +6,7 @@ def extra(arg):
         print("See you soon..!!")
     return inner()
 
-#this is the first method to call deco
+#this is the first method to call dec
 #@extra
 def test():
     print("My name is Niteesh")
