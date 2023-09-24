@@ -5,3 +5,5 @@ for i in s1:
     if i.isalpha():
         val=val+i
 print(val)
+
+#using ascii value
