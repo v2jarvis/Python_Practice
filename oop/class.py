@@ -4,4 +4,5 @@ class samsung:
     def val(self):
         pass
 obj=samsung()
+print(dir(obj))
 print(obj.x)
