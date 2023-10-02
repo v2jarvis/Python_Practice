@@ -1,4 +1,4 @@
-#find the second largest elements without using any function or method
+#find the second largest elements without using any function or method.
 #Naive approach
 
 #using method
