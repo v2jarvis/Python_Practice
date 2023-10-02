@@ -1,4 +1,4 @@
-#find the minimum elements betwout using any function or method
+#find the minimum elements without using any function or method
 l1=[2,8,3,1,7,4,6,9,3,5]
 
 #using method
