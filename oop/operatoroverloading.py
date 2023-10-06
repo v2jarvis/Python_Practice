@@ -1,4 +1,4 @@
-#simple example of operator overloading 1 2 3 5
+#simple example of operator overloading
 class cal:
     def __init__(self,a) -> None:
         self.a=a
