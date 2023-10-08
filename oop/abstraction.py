@@ -17,7 +17,7 @@ class div(test):
     def engine(self,a,b):
         return a/b
 obj=add()
-print(obj.engine(32,23))
+print(obj.engine(a=int(input("Enter The add Num:")),b=int(input("Enter The add Num:"))))
 obj1=sub()
 print(obj1.engine(32,23))
 obj2=mul()
