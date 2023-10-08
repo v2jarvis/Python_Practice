@@ -1,8 +1,8 @@
 #create simple example of encapsulation and  implement setter and getter method
 class test:
-    a=12
-    __b=10
-    _c=5
+    a=12  #public
+    __b=10 #private
+    _c=5    #protected
     def show(self,a,__b):
         self.a=a
         self.__b=__b
