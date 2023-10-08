@@ -17,11 +17,11 @@ class div(test):
     def engine(self,a,b):
         return a/b
 obj=add()
-print(obj.engine(a=int(input("Enter The add Num:")),b=int(input("Enter The add Num:"))))
+print(obj.engine(a=int(input("Enter the add num:")),b=int(input("Enter the add num:"))))
 obj1=sub()
-print(obj1.engine(32,23))
+print(obj1.engine(a=int(input("Enter the sub num:")),b=int(input("Enter the sub num:"))))
 obj2=mul()
-print(obj2.engine(32,23))
+print(obj2.engine(a=int(input("Enter the mul num:")),b=int(input("Enter the mul num:"))))
 obj3=div()
-print(obj3.engine(32,23))
+print(obj3.engine(a=int(input("Enter the div num:")),b=int(input("Enter the div num:"))))
 
