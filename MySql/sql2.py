@@ -1,4 +1,4 @@
-#add the values in table
+#add the values in table and execute the command
 import mysql.connector
 connection=mysql.connector.Connect(host='localhost',user='root',password='',database='v2jarvis')
 cur=connection.cursor()
