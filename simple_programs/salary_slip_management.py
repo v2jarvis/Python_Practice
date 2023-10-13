@@ -1,3 +1,4 @@
+#salary slip management using python
 name=(input("Enter The Name:"))
 desig=input("Enter Designation Type:")
 sal=eval(input("Enter Salary:"))
