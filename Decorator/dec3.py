@@ -1,4 +1,4 @@
-#uper and lower using deco
+#uper and lower using decorator
 
 def take_input(char):
     if (char.islower()):
