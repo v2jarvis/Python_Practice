@@ -1,4 +1,4 @@
-def yug(x):
+def yug(x):dd
     b=x+10
     del b
     return x
