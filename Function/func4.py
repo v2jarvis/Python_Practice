@@ -1,4 +1,4 @@
-#upper and lower the elements of string
+#upper and lower the elements of strin
 def uppr(str1):
     val=str1.upper()
     print(val)
