@@ -1,5 +1,8 @@
 #perform multiple task on the string-->>
+'''s1=" "
 
+s1=s1.isspace() #return true if there are any space in the string
+print(s1)'''
 
 '''s1="Niteesh"
 s2="hello how are you"
