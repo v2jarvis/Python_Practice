@@ -10,6 +10,7 @@ for i in d1.keys():
     print(i)
 for j in d1.values():
     print(j)'''
+'''
 d1={
     'name':'niteesh',
     'age':25,
@@ -17,4 +18,8 @@ d1={
 }
 #d1.pop('name')
 d1.popitem()
+print(d1)'''
+d1={1:'A',2:'B'}
+d2={1:'A',2:'B',3:'C'}
+d1.update(d2)
 print(d1)
