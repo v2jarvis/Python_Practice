@@ -17,3 +17,16 @@ obj.dis)'''
 obj=a()
 #obj._a__val() #this is call namemangling technique
 obj.val() #we can access using creating getter method'''
+
+#method overrriding
+class test:
+    def first(self):
+        return print("hello world")
+class test2(test):
+    def first(self):
+        return print("hello duniya")
+class test3(test2):
+    def first(self):
+        return print("hello jarvis")
+obj=test3()
+obj.first()
