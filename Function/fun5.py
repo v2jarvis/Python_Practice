@@ -50,3 +50,16 @@ class a:
         print("hello niteesh")
 obj=a()
 obj.first(1)'''
+
+'''
+from abc import ABC,abstractmethod
+class a(ABC):
+    @abstractmethod
+    def dis(self,a,b):
+        pass
+class b(a):
+    def dis(self,a,b):
+        print(a+b)
+obj=b()
+obj.dis(23,2)
+'''
