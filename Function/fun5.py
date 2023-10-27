@@ -18,6 +18,7 @@ obj=a()
 #obj._a__val() #this is call namemangling technique
 obj.val() #we can access using creating getter method'''
 
+'''
 #method overrriding
 class test:
     def first(self):
@@ -29,4 +30,23 @@ class test3(test2):
     def first(self):
         return print("hello jarvis")
 obj=test3()
-obj.first()
+obj.first()'''
+
+'''
+#method overloading
+from multipledispatch import dispatch
+class a:
+    @dispatch(int)
+    def first(self,a):
+        print("hello world")
+    @dispatch(float)
+    def first(self,a):
+        print("hello duniya")
+    @dispatch(int,int)
+    def first(self,a,b):
+        print("hello jarvis")
+    @dispatch(int,float,str)
+    def first(self,a,b,c):
+        print("hello niteesh")
+obj=a()
+obj.first(1)'''
