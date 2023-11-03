@@ -3,7 +3,7 @@ class MyClass:
     class_var = 0  # Class variable
 
     def __init__(self, value):
-        self.instance_var = value
+        self.class_var = value
 
 obj1 = MyClass(10)
 obj2 = MyClass(20)
