@@ -1,12 +1,5 @@
 #copy the list elements in second list
-def Cloning(li1):
-    li_copy = []
-    li_copy.extend(li1)
-    return li_copy
-
-
-# Driver Code
-li1 = [4, 8, 2, 10, 15, 18]
-li2 = Cloning(li1)
-print("Original List:", li1)
-print("After Cloning:", li2)
+l1=[4,1,9,5,2,8,3]
+l2=[]
+l2.extend(l1)
+print(l2)
