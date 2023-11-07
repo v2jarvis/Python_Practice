@@ -8,9 +8,9 @@ class MyClass:
 obj1 = MyClass(10)
 obj2 = MyClass(20)
 
-print(obj1.class_var)  # Output: 0
-print(obj2.class_var)  # Output: 0
+print(obj1.class_var)
+print(obj2.class_var)
 
-MyClass.class_var = 5  # Change the class variable
-print(obj1.class_var)  # Output: 5
-print(obj2.class_var)  # Output: 5
+MyClass.class_var = 5
+print(obj1.class_var)
+print(obj2.class_var)
