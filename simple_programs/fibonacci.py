@@ -1,4 +1,4 @@
-#using list
+#using list method
 num=int(input("ENter The Number:-"))
 fib=[0,1]
 
@@ -7,7 +7,7 @@ for i in range(2,num):
     fib.append(final)
 print(fib)
 
-#normal  way
+#normal way simple method
 n=int(input("Enter Number:"))
 a=0
 b=1
