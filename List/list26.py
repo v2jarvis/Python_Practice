@@ -8,9 +8,3 @@ for i in l1:
                 count=count+1
         print(count)
 
-#second method
-'''for i in l1:
-    if(type(i)==list):
-        i=i[i:len(i)]
-        c=i.count(4)
-        print(c)'''
