@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let data = {
+        //     id:1,
+        //     name:'Raman',
+        //     city:'Delhi'
+        // };
+        // console.log(data);
+
+
+        let data = [
+            {   id: 1,
+                name: 'Raman',
+                city: 'Delhi'
+            },
+            {
+                id: 2,
+                name: 'Naman',
+                city: 'Dehradun'
+            },
+            {
+                id: 3,
+                name: 'Soni',
+                city: 'Nainital'
+            },
+            {
+                id: 4,
+                name: 'Manav',
+                city: 'Noida'
+            }];
+
+          for(let i of data)
+          {
+              console.log(i.name);
+          }
+
+
+        document.write(` <table border="1" width='50%' cellpadding='20px'>
+        <tr>
+            <th> Id </th>
+            <th> Name </th>
+            <th> City </th>
+        </tr>`)
+        for (let d of data) {
+            debugger;
+            document.write(`
+                <tr>
+            <td> ${d.id} </td>
+            <td> ${d.name} </td>
+            <td> ${d.city} </td>
+        </tr>
+                `)
+        }
+        document.write(`</table>`)
+    </script>
+
+
+
+</body>
+
+</html>
