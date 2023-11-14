@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1 using array literals 
+        /*
+            let arr = [values sperated by comma];
+
+        */
+        // 2. By using new keyword
+        /*
+             let arr =  new Array(values sperated by comma);
+             ---------------------------------------------------
+             let arr = new Array(size);
+                 arr[index] = value;
+        */
+        let names = ["Raman", "Aman", "Naman", "Kiran", "Pooja", "Ravi", 12, 45, true];
+        console.log(names);
+        for (let d of names) {
+            console.log(d);
+        }
+        let empData = [101, 'Raman', 'Delhi', 45000, 'IT'];
+        for (let d of empData) {
+            document.write(` <li> ${d} </li>`)
+        }
+
+        document.write(`    
+        <table width='50%' border='1' align='center'>
+        <tr>
+            <th> ID </th>
+            <th> Name </th>
+            <th> City </th>
+            <th> Salary </th>
+            <th> Dept </th>
+        </tr>
+        <tr>
+        `);
+        for (let i of empData) {
+            document.write(` <td> ${i} </td>`)
+        }
+
+        document.write(`
+        </tr>
+        </table>`);
+
+
+        let imgs = ['https://images.herzindagi.info/image/2023/Sep/diwali-2023-astro-tips.jpg',
+            'https://im.indiatimes.in/content/2023/Aug/happy-diwali-card-with-diya-mari_64cb96e7139cc.jpg'];
+
+        for(let i of imgs)
+        {
+            document.write(`<img src=${i} height='200px'>`)
+        }
+    </script>
+
+
+
+    </table>
+</body>
+
+</html>
