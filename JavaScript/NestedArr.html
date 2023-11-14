@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let emp = [
+            [101, 'Ram', 'Delhi', 'IT'],
+            [102, 'Raman', 'Dehradun', 'HR'],
+            [103, 'Aman', 'Nainital', 'Sales'],
+            // [104,'Shimla','IT','Soni']
+        ]
+        console.log(emp);
+        document.write(`<table border='1' width='50%' >
+        <tr>
+            <th>  ID </th>
+            <th> Name </th>
+            <th> City </th>
+            <th> Dept </th>
+        </tr> `)
+        for(let e of emp)
+        {
+            document.write(`<tr>`)
+            for(let e1 of e)
+            {
+                document.write(`<td> ${e1} </td>`)
+            }
+        document.write(`</tr>`)
+        }
+    </script>
+    
+    </table>
+
+</body>
+
+</html>

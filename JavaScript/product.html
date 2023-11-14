@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+
+        }
+        .items{
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+            }
+        a{
+            background-color: black;
+            color: aqua;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let titles = ['title 1 ', 'title 2'];
+
+        let desc = ['    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt fugit quibusdam non, praesentium dolores ipsa similique provident id ipsum eligendi delectus nisi culpa libero, omnis minima doloribus accusamus vel animi.',
+            '    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt fugit quibusdam non, praesentium dolores ipsa similique provident id ipsum eligendi delectus nisi culpa libero, omnis minima doloribus accusamus vel animi.'];
+
+        let imgs = ['https://images.herzindagi.info/image/2023/Sep/diwali-2023-astro-tips.jpg',
+            'https://im.indiatimes.in/content/2023/Aug/happy-diwali-card-with-diya-mari_64cb96e7139cc.jpg'];
+
+        let links =['https://images.herzindagi.info/image/2023/Sep/diwali-2023-astro-tips.jpg',
+            'https://im.indiatimes.in/content/2023/Aug/happy-diwali-card-with-diya-mari_64cb96e7139cc.jpg']
+
+            document.write(`<div class='container'>`)
+                for(let i in links)
+                {
+                    document.write(`
+                        <div class='items'>
+                            <img src = ${imgs[i]} height='200px'>
+                            <h3> ${titles[i]} </h3>
+                            <p>
+                                ${desc[i]}
+                            </p>
+                            <a href=${links[i]} target='_blank'>Learn More  </a>
+                        </div>
+                    `)
+                }
+            document.write(`</div>`)
+
+    </script>
+
+</body>
+
+</html>
