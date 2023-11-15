@@ -8,7 +8,7 @@ l1=[1,2,3,4,5,6,7,8]
 #l1=l1[:0]
 #print(l1)
 
-#third way
+#third method
 while(len(l1)!=0):
     l1.pop()
 print(l1)
