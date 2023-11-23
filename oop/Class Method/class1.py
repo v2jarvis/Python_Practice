@@ -4,8 +4,15 @@ class Test:
     def __init__(self,name,address):
         self.n=name
         self.a=address
+    def display(self):
+        print(f"hii I'm {self.n}")
+
+
 t1=Test('Niteesh','Noida')
-t1.salary=25000
-print(t1.n,t1.a,t1.salary)
-t2=Test('Uday','Noida')
-print(t2.n,t2.a,t2.salary)
+t1.display()
+#t1.salary=25000
+#print(t1.n,t1.a,t1.salary)
+
+
+#t2=Test('Uday','Noida')
+#print(t2.n,t2.a,t2.salary)
