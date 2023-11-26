@@ -8,11 +8,9 @@ def smart_add(arg):
         return arg(L3)
     return inner
 
-
 @smart_add
 def add(L3):
     print(L3)
-
 L1 = [1, 2, 4, 5.0, 6.0,"niteesh"]
 L2 = [7, 8, 9, 10.0]
 add(L1,L2)
