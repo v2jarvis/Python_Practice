@@ -1,4 +1,4 @@
-#add the value and print the series of 2 mul
+#add the value and print the series of 2 mul and print the sum
 val=int(input("Enter The Val:"))
 s1=''
 temp=0
@@ -8,8 +8,7 @@ for i in range(val):
     s1+=str(add)
     add*=2
     if((val-1)==i):
-        s1+="+"
+        s1+=" ="
     else:
-        s1+="="
-print(s1)
-print(temp)
+        s1+="+"
+print(s1,temp)
