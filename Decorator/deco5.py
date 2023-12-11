@@ -4,7 +4,7 @@ def smart_add(arg):
         L3=[]
         for i in range(min(len(L1),len(L2))):
             L3.append(L1[i]+L2[i])
-        L3.extend(L1[i:]+L2[i:])
+        #L3.extend(L1[i:]+L2[i:])
         return arg(L3)
     return inner
 
