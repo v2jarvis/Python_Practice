@@ -5,5 +5,5 @@ for i in s1:
     s2.append(i)
 s2.sort()
 for j in s2:
-    print(j)
+    print(j,end="")
 

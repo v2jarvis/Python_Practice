@@ -12,7 +12,7 @@ s1=s1.replace("Niteesh","v2jarvis")
 print(s1)'''
 
 '''s1="how are you, I am fine, tellme about you?"
-s1=s1.split(' ') #split use to seprate the value and convert a string into a list
+s1=s1.split(" ") #split use to seprate the value and convert a string into a list
 print(s1)'''
 
 '''s1='v2jarvis'
