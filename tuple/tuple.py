@@ -1,3 +1,14 @@
-#simple example of tuple an perform multiple task on it
+#perform the tuple comprihension and get data using iter and next
 my_tuple = (i for i in range(1, 50))
-print(my_tuple)
+data=iter(my_tuple)
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
+print(next(data))
