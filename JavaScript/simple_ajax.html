@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJAX Example</title>
+    <title>AJAX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div id="result"></div>
+<div class="container mt-4">
+    <table class="table table-bordered" id="dataTable">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody id="dataBody"></tbody>
+    </table>
+</div>
 
 <script>
     function fetchData() {
-			$.ajax({
-				url: 'https://jsonplaceholder.typicode.com/users/5',
-				type: 'GET',
-				dataType: 'json',
-				success: function (data) {
-					$('#result').html('<p>Data received: ' + JSON.stringify(data) + '</p>');
-				},
-				error: function (error) {
-					$('#result').html('<p>Error: ' + error.statusText + '</p>');
-				}
-			});
-		}
-		$(document).ready(function () {
-			fetchData();
-		});
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/users',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                // Clear existing data
+                $('#dataBody').empty();
+
+                // Populate table with fetched data
+                $.each(data, function (index, user) {
+                    $('#dataBody').append('<tr>' +
+                        '<td>' + user.id + '</td>' +
+                        '<td>' + user.name + '</td>' +
+                        '<td>' + user.email + '</td>' +
+                        '<td>' + user.username + '</td>' +
+                        '</tr>');
+                });
+            },
+            error: function (error) {
+                $('#result').html('<p>Error: ' + error.statusText + '</p>');
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        fetchData();
+    });
 </script>
 
 </body>
