@@ -1,5 +1,6 @@
 l1=[1,2,3,4,5,6,7,8,9]
-for i in l1:
-    l1.remove(i)
-    print(i)
-print(l1)
+l2=[]
+for i in range(len(l1)-1,-1,-1):
+    l2.append(l1[i])
+
+print(l2)
