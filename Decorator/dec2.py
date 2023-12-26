@@ -11,5 +11,4 @@ def smart_div(arg):
 def div(a,b):
     val=a/b
     print(val)
-    return val
 div(32,0)
