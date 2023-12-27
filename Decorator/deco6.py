@@ -5,7 +5,6 @@ def smart_add(arg):
         return arg(con)
     return inner
 
-
 @smart_add
 def add(con):
     print(con)
