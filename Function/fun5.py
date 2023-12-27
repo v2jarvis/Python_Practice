@@ -1,18 +1,16 @@
 #create simple func and perfom multiple task on that
-
-'''
 #method overrriding
 class test:
     def first(self):
         return print("hello world")
-class test2(test):
+class test2():
     def first(self):
         return print("hello duniya")
-class test3(test2):
+class test3(test2,test):
     def first(self):
         return print("hello jarvis")
 obj=test3()
-obj.first()'''
+obj.first()
 
 '''
 #method overloading
