@@ -1,10 +1,12 @@
 class a:
     def __val(self): #protected method
-        return ("hello from jarvis")
+        print ("hello from jarvis")
+    def show(self):
+        self.__val()
 class b(a):
     def dis(self):
-        val=self._a__val()
-        print(val)
+        super().show()
+        #val=self._a__val()
 obj=b()
 obj.dis()
 
