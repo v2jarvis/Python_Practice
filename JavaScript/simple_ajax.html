@@ -17,12 +17,8 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Email</th>
-                <th>Username</th>
-				<th>Street</th>
-				<th>City</th>
-				<th>Phone</th>
-
+                <th>Mobile</th>
+                <th>Address</th>
             </tr>
         </thead>
         <tbody id="dataBody"></tbody>
@@ -32,7 +28,7 @@
 <script>
     function fetchData() {
         $.ajax({
-            url: 'https://jsonplaceholder.typicode.com/users',
+            url: 'http://localhost:8000/',
             type: 'GET',
             dataType: 'json',
             success: function (data) {
@@ -41,11 +37,8 @@
                     $('#dataBody').append('<tr>' +
                         '<td>' + user.id + '</td>' +
                         '<td>' + user.name + '</td>' +
-                        '<td>' + user.email + '</td>' +
-                        '<td>' + user.username + '</td>' +
-						'<td>' + user.address.street + '</td>' +
-						'<td>' + user.address.city + '</td>' +
-						'<td>' + user.phone + '</td>' +
+                        '<td>' + user.mob + '</td>' +
+                        '<td>' + user.address + '</td>' +
                         '</tr>');
                 });
             },

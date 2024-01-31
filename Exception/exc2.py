@@ -1,5 +1,4 @@
 #create three manual exception
-
 class ValidAge(Exception):
     pass
 try:
@@ -9,18 +8,6 @@ try:
     else:
         raise ValidAge
 
-except Exception:
+except ValidAge:
     print("Invalid Age")
 
-
-'''class ValidString(Exception):
-    pass
-
-try:
-    name=input("Enter The Name:")
-    if(type(name)==str):
-        print(name)
-    else:
-        raise ValidString
-except Exception:
-    print("Take only string input")'''
