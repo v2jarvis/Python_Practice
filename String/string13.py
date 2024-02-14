@@ -1,5 +1,5 @@
 #reverse vowels of a string
-s1='hello'
+s1='hello yugal'
 s2=''
 vowels='aeiouAEIOU'
 l1=[]
