@@ -7,4 +7,4 @@
 '''
 num=int(input("Enter the len:"))
 for i in range(num):
-    print((str(3+i)+" ")*num)
+    print((str(i+1)+" ")*num)
