@@ -3,7 +3,7 @@ a=15
 b=25
 
 temp=0
-if a>b:
+if a<b:
     temp=a
 else:
     temp=b
