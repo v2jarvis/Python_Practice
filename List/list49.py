@@ -11,11 +11,16 @@ for i in l1:
         for k in range(len(data)):
             if data[j]<data[k]:
                 data[j],data[k]=data[k],data[j]
-    temp=0
-    for l in data:
-        temp=temp*10+l
-    l2.append(temp)
-print(l2)
+    # temp=0
+    # for l in data:
+        # temp=temp*10+l
+    # l2.append(temp)
+# print(l2)
+    for l in range(len(data)):
+        for m in range(len(data)):
+            if data[l]<data[m]:
+                data[l],data[m]=data[m],data[l]
+    print(data,end="")
         #print(str(i)[j])
 
 
