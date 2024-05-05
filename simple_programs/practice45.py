@@ -71,6 +71,19 @@ from multipledispatch import dispatch
 #
 # print(a3+val)
 
+class Test:
+    def __init__(self,a):
+        self.__a=a
+
+    def set_val(self):
+        return self.__a
+    def get_val(self):
+        print (self.__a)
+
+obj=Test(5)
+obj.__a=50
+obj.get_val()
+
 
 
 
