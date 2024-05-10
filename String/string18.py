@@ -1,4 +1,5 @@
 #capatlized the string without capatlize method
+
 s1=input("Enter the string:")
 s2=""
 if s1[0].islower():
